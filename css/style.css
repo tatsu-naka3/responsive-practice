@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+.wrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.q1--box {
+  width: 400px;
+  height: 400px;
+  background: #ff0000;
+  margin: 0 auto;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+}
+
+.q2--box {
+  background: #ff0000;
+  margin: 0 auto;
+}
+
+.margin--box {
+  display: flex;
+  justify-content: center;
+}
+
+.q3--left--box {
+  background: #0008ff;
+}
+
+.q3--right--box {
+  background: #22ff00;
+  margin-left: 150px;
+}
+
+.float--box {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.q4--red--box {
+  background: #ff0000;
+  float: left;
+}
+
+.q4--blue--box {
+  background: #0008ff;
+  float: right;
+}
+
+
+.q5--flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.q5--red--box {
+  background: #ff0000;
+  align-items: center;
+}
+
+.q5--blue--box {
+  background: #0008ff;
+}
+
+.q5--orange--box {
+  background: #ff8400;
+}
+
+.q6--flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.q6--green--box {
+  background: #00ff51;
+}
+
+.q6--yellow--box {
+  background: #d4ff00;
+}
+
+.q6--pink--box {
+  background: #ff00e1;
+}
+
+.q7--flexbox {
+  display: flex;
+  justify-content: center;
+}
+
+.q7--red--box {
+  background: #ff0000;
+}
+
+.q7--green--box {
+  background: #00ff51;
+}
+
+.q7--blue--box {
+  background: #0008ff;
+  display: none;
+}
+
+.word {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* 960px未満 */
+@media  not screen and (min-width:960px) {
+  .q1--box {
+    width: 200px;
+    height: 200px;
+  }
+
+  .q2--box {
+    background: #007bff;
+  }
+
+  .q3--right--box {
+    margin-left: 50px;
+  }
+
+  .float--box {
+    width: 300px;
+    margin: unset;
+  }
+
+  .q4--red--box + .q4--blue--box{
+    clear: both;
+  }
+
+  .q5--flexbox {
+    flex-direction: row-reverse;
+  }
+  
+  .q6--green--box {
+    order: 2
+  }
+
+  .q6--yellow--box {
+    order: 3
+  }
+
+  .q6--pink--box {
+    order: 1;
+  }
+
+  .q7--flexbox {
+    flex-direction:row-reverse;
+  }
+
+  .q7--blue--box {
+    display: block;
+  }
+
+  .q7--red--box {
+    display: none;
+  }
+}
+
